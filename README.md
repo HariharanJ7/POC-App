@@ -14,7 +14,7 @@ This Proof of Concept (POC) project demonstrates a role-based authentication and
 
 ### Frontend
 
-- React.js (with Redux for state management)
+- React.js (with Redux for state management and ANTD used as React UI tool)
 - React Router for navigation
 - Axios for API requests
 - jwt-decode for decoding JWT tokens
@@ -50,7 +50,10 @@ Ensure you have the following installed:
 2. Initialize the project and install dependencies:
    ```bash
    npm init -y  # Initialize package.json if not done already
-   npm install express cors dotenv mysql2 sequelize jsonwebtoken bcryptjs express-validator helmet morgan
+   npm install express cors dotenv mysql2 sequelize jsonwebtoken bcryptjs express-validator helmet morgan bootstrap
+   npm i antd --save
+   npm install @mui/material @emotion/react @emotion/styled
+   npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
    npm install --save-dev nodemon
    ```
 3. Set up environment variables in a `.env` file:
