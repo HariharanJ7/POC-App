@@ -4,8 +4,13 @@ const cors = require('cors');
 const sequelize = require('./config/database');
 const userRoutes = require('./routes/user.route');
 const protectedRoutes = require('./routes/protected.route');
+const helmet = require('helmet');
+const morgan = require('morgan');
 
 const app = express();
+
+app.use(helmet());
+app.use(morgan('combined')); 
 
 app.use(cors());
 app.use(express.json());
